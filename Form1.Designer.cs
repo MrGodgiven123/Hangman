@@ -55,14 +55,14 @@
             B_Button = new Button();
             N_Button = new Button();
             M_Button = new Button();
-            PictureBox = new PictureBox();
+            ImageBox = new PictureBox();
             WordLabel = new Label();
             DifficultyPanel = new Panel();
             ConfirmButton = new Button();
             HardButton = new RadioButton();
             MediumButton = new RadioButton();
             EasyButton = new RadioButton();
-            ((System.ComponentModel.ISupportInitialize)PictureBox).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)ImageBox).BeginInit();
             DifficultyPanel.SuspendLayout();
             SuspendLayout();
             // 
@@ -352,19 +352,19 @@
             M_Button.Text = "M";
             M_Button.UseVisualStyleBackColor = true;
             // 
-            // PictureBox
+            // ImageBox
             // 
-            PictureBox.Image = Properties.Resources.Hangman0;
-            PictureBox.Location = new Point(12, 1);
-            PictureBox.Name = "PictureBox";
-            PictureBox.Size = new Size(242, 437);
-            PictureBox.TabIndex = 26;
-            PictureBox.TabStop = false;
+            ImageBox.Image = Properties.Resources.Hangman0;
+            ImageBox.Location = new Point(12, 10);
+            ImageBox.Name = "ImageBox";
+            ImageBox.Size = new Size(242, 437);
+            ImageBox.TabIndex = 26;
+            ImageBox.TabStop = false;
             // 
             // WordLabel
             // 
             WordLabel.Font = new Font("Segoe Script", 26.25F, FontStyle.Bold, GraphicsUnit.Point, 204);
-            WordLabel.Location = new Point(322, 118);
+            WordLabel.Location = new Point(322, 84);
             WordLabel.Name = "WordLabel";
             WordLabel.Size = new Size(404, 65);
             WordLabel.TabIndex = 0;
@@ -441,7 +441,7 @@
             ClientSize = new Size(784, 451);
             Controls.Add(DifficultyPanel);
             Controls.Add(WordLabel);
-            Controls.Add(PictureBox);
+            Controls.Add(ImageBox);
             Controls.Add(M_Button);
             Controls.Add(N_Button);
             Controls.Add(B_Button);
@@ -473,7 +473,7 @@
             Name = "Form1";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Hangman";
-            ((System.ComponentModel.ISupportInitialize)PictureBox).EndInit();
+            ((System.ComponentModel.ISupportInitialize)ImageBox).EndInit();
             DifficultyPanel.ResumeLayout(false);
             DifficultyPanel.PerformLayout();
             ResumeLayout(false);
@@ -507,7 +507,7 @@
         private Button B_Button;
         private Button N_Button;
         private Button M_Button;
-        private PictureBox PictureBox;
+        private PictureBox ImageBox;
         private Label WordLabel;
         private Panel DifficultyPanel;
         private RadioButton EasyButton;
