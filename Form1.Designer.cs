@@ -62,7 +62,6 @@
             HardButton = new RadioButton();
             MediumButton = new RadioButton();
             EasyButton = new RadioButton();
-            UsedSymbolsLabel = new Label();
             ((System.ComponentModel.ISupportInitialize)PictureBox).BeginInit();
             DifficultyPanel.SuspendLayout();
             SuspendLayout();
@@ -74,10 +73,9 @@
             Q_Button.Name = "Q_Button";
             Q_Button.Size = new Size(35, 35);
             Q_Button.TabIndex = 0;
-            Q_Button.Tag = "Button";
+            Q_Button.Tag = "q";
             Q_Button.Text = "Q";
             Q_Button.UseVisualStyleBackColor = true;
-            Q_Button.Click += Q_Button_Click;
             // 
             // W_Button
             // 
@@ -86,7 +84,7 @@
             W_Button.Name = "W_Button";
             W_Button.Size = new Size(35, 35);
             W_Button.TabIndex = 1;
-            W_Button.Tag = "Button";
+            W_Button.Tag = "w";
             W_Button.Text = "W";
             W_Button.UseVisualStyleBackColor = true;
             // 
@@ -97,7 +95,7 @@
             E_Button.Name = "E_Button";
             E_Button.Size = new Size(35, 35);
             E_Button.TabIndex = 2;
-            E_Button.Tag = "Button";
+            E_Button.Tag = "e";
             E_Button.Text = "E";
             E_Button.UseVisualStyleBackColor = true;
             // 
@@ -108,7 +106,7 @@
             R_Button.Name = "R_Button";
             R_Button.Size = new Size(35, 35);
             R_Button.TabIndex = 3;
-            R_Button.Tag = "Button";
+            R_Button.Tag = "r";
             R_Button.Text = "R";
             R_Button.UseVisualStyleBackColor = true;
             // 
@@ -119,7 +117,7 @@
             T_Button.Name = "T_Button";
             T_Button.Size = new Size(35, 35);
             T_Button.TabIndex = 4;
-            T_Button.Tag = "Button";
+            T_Button.Tag = "t";
             T_Button.Text = "T";
             T_Button.UseVisualStyleBackColor = true;
             // 
@@ -130,7 +128,7 @@
             Y_Button.Name = "Y_Button";
             Y_Button.Size = new Size(35, 35);
             Y_Button.TabIndex = 5;
-            Y_Button.Tag = "Button";
+            Y_Button.Tag = "y";
             Y_Button.Text = "Y";
             Y_Button.UseVisualStyleBackColor = true;
             // 
@@ -141,7 +139,7 @@
             U_Button.Name = "U_Button";
             U_Button.Size = new Size(35, 35);
             U_Button.TabIndex = 6;
-            U_Button.Tag = "Button";
+            U_Button.Tag = "u";
             U_Button.Text = "U";
             U_Button.UseVisualStyleBackColor = true;
             // 
@@ -152,7 +150,7 @@
             I_Button.Name = "I_Button";
             I_Button.Size = new Size(35, 35);
             I_Button.TabIndex = 7;
-            I_Button.Tag = "Button";
+            I_Button.Tag = "i";
             I_Button.Text = "I";
             I_Button.UseVisualStyleBackColor = true;
             // 
@@ -163,7 +161,7 @@
             O_Button.Name = "O_Button";
             O_Button.Size = new Size(35, 35);
             O_Button.TabIndex = 8;
-            O_Button.Tag = "Button";
+            O_Button.Tag = "o";
             O_Button.Text = "O";
             O_Button.UseVisualStyleBackColor = true;
             // 
@@ -174,7 +172,7 @@
             P_Button.Name = "P_Button";
             P_Button.Size = new Size(35, 35);
             P_Button.TabIndex = 9;
-            P_Button.Tag = "Button";
+            P_Button.Tag = "p";
             P_Button.Text = "P";
             P_Button.UseVisualStyleBackColor = true;
             // 
@@ -185,7 +183,7 @@
             button1.Name = "button1";
             button1.Size = new Size(35, 35);
             button1.TabIndex = 10;
-            button1.Tag = "Button";
+            button1.Tag = "a";
             button1.Text = "A";
             button1.UseVisualStyleBackColor = true;
             // 
@@ -196,7 +194,7 @@
             S_Button.Name = "S_Button";
             S_Button.Size = new Size(35, 35);
             S_Button.TabIndex = 11;
-            S_Button.Tag = "Button";
+            S_Button.Tag = "s";
             S_Button.Text = "S";
             S_Button.UseVisualStyleBackColor = true;
             // 
@@ -207,7 +205,7 @@
             D_Button.Name = "D_Button";
             D_Button.Size = new Size(35, 35);
             D_Button.TabIndex = 12;
-            D_Button.Tag = "Button";
+            D_Button.Tag = "d";
             D_Button.Text = "D";
             D_Button.UseVisualStyleBackColor = true;
             // 
@@ -218,7 +216,7 @@
             F_Button.Name = "F_Button";
             F_Button.Size = new Size(35, 35);
             F_Button.TabIndex = 13;
-            F_Button.Tag = "Button";
+            F_Button.Tag = "f";
             F_Button.Text = "F";
             F_Button.UseVisualStyleBackColor = true;
             // 
@@ -229,7 +227,7 @@
             G_Button.Name = "G_Button";
             G_Button.Size = new Size(35, 35);
             G_Button.TabIndex = 14;
-            G_Button.Tag = "Button";
+            G_Button.Tag = "g";
             G_Button.Text = "G";
             G_Button.UseVisualStyleBackColor = true;
             // 
@@ -240,7 +238,7 @@
             H_Button.Name = "H_Button";
             H_Button.Size = new Size(35, 35);
             H_Button.TabIndex = 15;
-            H_Button.Tag = "Button";
+            H_Button.Tag = "h";
             H_Button.Text = "H";
             H_Button.UseVisualStyleBackColor = true;
             // 
@@ -251,7 +249,7 @@
             J_Button.Name = "J_Button";
             J_Button.Size = new Size(35, 35);
             J_Button.TabIndex = 16;
-            J_Button.Tag = "Button";
+            J_Button.Tag = "j";
             J_Button.Text = "J";
             J_Button.UseVisualStyleBackColor = true;
             // 
@@ -262,7 +260,7 @@
             K_Button.Name = "K_Button";
             K_Button.Size = new Size(35, 35);
             K_Button.TabIndex = 17;
-            K_Button.Tag = "Button";
+            K_Button.Tag = "k";
             K_Button.Text = "K";
             K_Button.UseVisualStyleBackColor = true;
             // 
@@ -273,7 +271,7 @@
             L_Button.Name = "L_Button";
             L_Button.Size = new Size(35, 35);
             L_Button.TabIndex = 18;
-            L_Button.Tag = "Button";
+            L_Button.Tag = "l";
             L_Button.Text = "L";
             L_Button.UseVisualStyleBackColor = true;
             // 
@@ -284,7 +282,7 @@
             Z_Button.Name = "Z_Button";
             Z_Button.Size = new Size(35, 35);
             Z_Button.TabIndex = 19;
-            Z_Button.Tag = "Button";
+            Z_Button.Tag = "z";
             Z_Button.Text = "Z";
             Z_Button.UseVisualStyleBackColor = true;
             // 
@@ -295,7 +293,7 @@
             X_Button.Name = "X_Button";
             X_Button.Size = new Size(35, 35);
             X_Button.TabIndex = 20;
-            X_Button.Tag = "Button";
+            X_Button.Tag = "x";
             X_Button.Text = "X";
             X_Button.UseVisualStyleBackColor = true;
             // 
@@ -306,7 +304,7 @@
             C_Button.Name = "C_Button";
             C_Button.Size = new Size(35, 35);
             C_Button.TabIndex = 21;
-            C_Button.Tag = "Button";
+            C_Button.Tag = "c";
             C_Button.Text = "C";
             C_Button.UseVisualStyleBackColor = true;
             // 
@@ -317,7 +315,7 @@
             V_Button.Name = "V_Button";
             V_Button.Size = new Size(35, 35);
             V_Button.TabIndex = 22;
-            V_Button.Tag = "Button";
+            V_Button.Tag = "v";
             V_Button.Text = "V";
             V_Button.UseVisualStyleBackColor = true;
             // 
@@ -328,7 +326,7 @@
             B_Button.Name = "B_Button";
             B_Button.Size = new Size(35, 35);
             B_Button.TabIndex = 23;
-            B_Button.Tag = "Button";
+            B_Button.Tag = "b";
             B_Button.Text = "B";
             B_Button.UseVisualStyleBackColor = true;
             // 
@@ -339,7 +337,7 @@
             N_Button.Name = "N_Button";
             N_Button.Size = new Size(35, 35);
             N_Button.TabIndex = 24;
-            N_Button.Tag = "Button";
+            N_Button.Tag = "n";
             N_Button.Text = "N";
             N_Button.UseVisualStyleBackColor = true;
             // 
@@ -350,12 +348,13 @@
             M_Button.Name = "M_Button";
             M_Button.Size = new Size(35, 35);
             M_Button.TabIndex = 25;
-            M_Button.Tag = "Button";
+            M_Button.Tag = "m";
             M_Button.Text = "M";
             M_Button.UseVisualStyleBackColor = true;
             // 
             // PictureBox
             // 
+            PictureBox.Image = Properties.Resources.Hangman0;
             PictureBox.Location = new Point(12, 1);
             PictureBox.Name = "PictureBox";
             PictureBox.Size = new Size(242, 437);
@@ -364,9 +363,8 @@
             // 
             // WordLabel
             // 
-            WordLabel.BorderStyle = BorderStyle.FixedSingle;
             WordLabel.Font = new Font("Segoe Script", 26.25F, FontStyle.Bold, GraphicsUnit.Point, 204);
-            WordLabel.Location = new Point(322, 81);
+            WordLabel.Location = new Point(322, 118);
             WordLabel.Name = "WordLabel";
             WordLabel.Size = new Size(404, 65);
             WordLabel.TabIndex = 0;
@@ -405,7 +403,6 @@
             HardButton.Name = "HardButton";
             HardButton.Size = new Size(180, 32);
             HardButton.TabIndex = 3;
-            HardButton.TabStop = true;
             HardButton.Text = "Hard (3 attempts)";
             HardButton.TextAlign = ContentAlignment.MiddleCenter;
             HardButton.UseVisualStyleBackColor = true;
@@ -418,7 +415,6 @@
             MediumButton.Name = "MediumButton";
             MediumButton.Size = new Size(202, 32);
             MediumButton.TabIndex = 2;
-            MediumButton.TabStop = true;
             MediumButton.Text = "Medium (5 attempts)";
             MediumButton.TextAlign = ContentAlignment.MiddleCenter;
             MediumButton.UseVisualStyleBackColor = true;
@@ -426,6 +422,7 @@
             // EasyButton
             // 
             EasyButton.AutoSize = true;
+            EasyButton.Checked = true;
             EasyButton.Font = new Font("Segoe Print", 12F, FontStyle.Bold, GraphicsUnit.Point, 204);
             EasyButton.Location = new Point(20, 10);
             EasyButton.MinimumSize = new Size(180, 0);
@@ -436,16 +433,6 @@
             EasyButton.Text = "Easy (9 attempts)";
             EasyButton.TextAlign = ContentAlignment.MiddleCenter;
             EasyButton.UseVisualStyleBackColor = true;
-            // 
-            // UsedSymbolsLabel
-            // 
-            UsedSymbolsLabel.Font = new Font("Segoe Print", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 204);
-            UsedSymbolsLabel.Location = new Point(322, 154);
-            UsedSymbolsLabel.Name = "UsedSymbolsLabel";
-            UsedSymbolsLabel.Size = new Size(404, 85);
-            UsedSymbolsLabel.TabIndex = 0;
-            UsedSymbolsLabel.Text = "UsedSymbols";
-            UsedSymbolsLabel.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // Form1
             // 
@@ -481,7 +468,6 @@
             Controls.Add(E_Button);
             Controls.Add(W_Button);
             Controls.Add(Q_Button);
-            Controls.Add(UsedSymbolsLabel);
             FormBorderStyle = FormBorderStyle.FixedToolWindow;
             Icon = (Icon)resources.GetObject("$this.Icon");
             Name = "Form1";
@@ -528,6 +514,5 @@
         private RadioButton MediumButton;
         private Button ConfirmButton;
         private RadioButton HardButton;
-        private Label UsedSymbolsLabel;
     }
 }
