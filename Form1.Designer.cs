@@ -62,6 +62,7 @@
             HardButton = new RadioButton();
             MediumButton = new RadioButton();
             EasyButton = new RadioButton();
+            RestartButton = new Button();
             ((System.ComponentModel.ISupportInitialize)ImageBox).BeginInit();
             DifficultyPanel.SuspendLayout();
             SuspendLayout();
@@ -434,11 +435,23 @@
             EasyButton.TextAlign = ContentAlignment.MiddleCenter;
             EasyButton.UseVisualStyleBackColor = true;
             // 
+            // RestartButton
+            // 
+            RestartButton.Font = new Font("Segoe Print", 9F, FontStyle.Bold, GraphicsUnit.Point, 204);
+            RestartButton.Location = new Point(697, 10);
+            RestartButton.Name = "RestartButton";
+            RestartButton.Size = new Size(75, 28);
+            RestartButton.TabIndex = 29;
+            RestartButton.Text = "Restart";
+            RestartButton.UseVisualStyleBackColor = true;
+            RestartButton.Click += RestartButton_Click;
+            // 
             // Form1
             // 
             AutoScaleMode = AutoScaleMode.None;
             BackColor = SystemColors.ScrollBar;
             ClientSize = new Size(784, 451);
+            Controls.Add(RestartButton);
             Controls.Add(DifficultyPanel);
             Controls.Add(WordLabel);
             Controls.Add(ImageBox);
@@ -514,5 +527,6 @@
         private RadioButton MediumButton;
         private Button ConfirmButton;
         private RadioButton HardButton;
+        private Button RestartButton;
     }
 }

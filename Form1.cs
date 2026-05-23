@@ -23,7 +23,7 @@ namespace Hangman
             foreach (Control btn in Controls.OfType<Button>())
             {
                 btn.Enabled = false;
-                btn.Click += Play_Click; 
+                if (btn.Text != "Restart") btn.Click += Play_Click;
             }
 
             SWord();
@@ -38,18 +38,19 @@ namespace Hangman
             {
                 for (int i = 0; i < TrueWord.Length; i++)
                 {
-                    if (TrueWord[i] == Convert.ToChar(btn.Tag)) Word[i] = Convert.ToChar(btn.Tag); 
+                    if (TrueWord[i] == Convert.ToChar(btn.Tag)) Word[i] = Convert.ToChar(btn.Tag);
                 }
 
                 SWord();
 
-                if(!Word.Contains('_'))
+                if (!Word.Contains('_'))
                 {
                     foreach (Control bttn in Controls.OfType<Button>())
                     {
-                    bttn.Enabled = false;
+                        bttn.Enabled = false;
                     }
 
+                    RestartButton.Enabled = true;
                 }
             }
             else
@@ -64,6 +65,8 @@ namespace Hangman
                         bttn.Enabled = false;
                         WordLabel.Text = string.Join(" ", TrueWord.ToCharArray());
                     }
+
+                    RestartButton.Enabled = true;
                 }
 
             }
@@ -97,10 +100,27 @@ namespace Hangman
             DifficultyPanel.Visible = false;
 
         }
+        private void RestartButton_Click(object sender, EventArgs e)
+        {
+            ImageBox.Image = Properties.Resources.Hangman0;
+            DifficultyPanel.Visible = true;
+            DifficultyPanel.Enabled = true;
+
+            TrueWord = WordsList[rnd.Next(WordsList.Count)];
+            Word = new string('_', TrueWord.Length).ToCharArray();
+            SWord();
+
+            foreach (Control btn in Controls.OfType<Button>())
+            {
+                btn.Enabled = false;
+            }
+
+        }
 
         private void SWord()
         {
             WordLabel.Text = string.Join(" ", Word);
         }
+
     }
 }
